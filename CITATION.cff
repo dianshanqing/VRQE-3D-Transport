@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the associated manuscript and the archived software release."
+title: "VRQE-3D-Transport: Code and reproducibility outputs for a verifiable reversible quantum embedding framework for multi-terminal stochastic transport"
+authors:
+  - family-names: "Wang"
+    given-names: "Yu"
+year: 2026
+license: MIT
+repository-code: "https://github.com/dianshanqing/VRQE-3D-Transport"
+doi: "10.5281/zenodo.20152406"
+version: "v1.0.1-nc-submission"
