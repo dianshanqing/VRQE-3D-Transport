@@ -204,7 +204,7 @@ The IQAE examples are intended to demonstrate amplitude-estimation compatibility
 
 If you use this repository, please cite the associated manuscript and the archived software release:
 
-Wang, Y. *VRQE-3D-Transport: Code and reproducibility outputs for a verifiable reversible quantum embedding framework for multi-terminal stochastic transport*. Zenodo. DOI: 10.5281/zenodo.20152406 (2026).
+Wang, Y. *VRQE-3D-Transport: Code and reproducibility outputs for a verifiable reversible quantum embedding framework for multi-terminal stochastic transport*. Zenodo. DOI:  (2026).
 
 ## License
 
