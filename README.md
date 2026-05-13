@@ -200,18 +200,12 @@ The IQAE examples are intended to demonstrate amplitude-estimation compatibility
 - The compiled `.qpy` files, if retained, are cache artifacts for convenience. They are not required to rebuild the circuits from source.
 - For manuscript-level inspection, use the archived `outputs/` files rather than rerunning the longest jobs.
 
-cff-version: 1.2.0
-message: "If you use this repository, please cite the associated manuscript and the archived software release."
-title: "VRQE-3D-Transport: Code and reproducibility outputs for a verifiable reversible quantum embedding framework for multi-terminal stochastic transport"
-authors:
-  - family-names: "Wang"
-    given-names: "Yu"
-year: 2026
-license: MIT
-repository-code: "https://github.com/dianshanqing/VRQE-3D-Transport"
-doi: "10.5281/zenodo.20152406"
-version: "v1.0.1-nc-submission"
+## Citation
+
+If you use this repository, please cite the associated manuscript and the archived software release:
+
+Wang, Y. *VRQE-3D-Transport: Code and reproducibility outputs for a verifiable reversible quantum embedding framework for multi-terminal stochastic transport*. Zenodo. DOI: 10.5281/zenodo.20152406 (2026).
 
 ## License
 
-Add an open-source license file before public release. A permissive license such as MIT or BSD-3-Clause is recommended unless institutional or collaborator requirements specify otherwise.
+This repository is released under the MIT License.
