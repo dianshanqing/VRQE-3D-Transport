@@ -3,7 +3,7 @@ Archived release DOI: 10.5281/zenodo.20152406
 
 This repository contains the public code and reproducibility outputs associated with the Nature Communications submission on a verifiable reversible quantum embedding framework for multi-terminal stochastic transport. The package implements a heterogeneous 3D discrete transport benchmark, a reversible Qiskit circuit construction with unified terminal-status semantics, classical Monte Carlo references, tensor-network circuit sampling checks, compressed-kernel variants, diagnostics, and low-step IQAE demonstrations.
 
-The previous PRL-oriented repository title and description should be replaced by this NC-oriented repository description. This repository is not only a source-code package; it also includes the output files needed to inspect the numerical results reported in the manuscript.
+This repository is not only a source-code package; it also includes the output files needed to inspect the numerical results reported in the manuscript.
 
 ## Repository scope
 
