@@ -1,0 +1,14 @@
+{
+  "phase": "test",
+  "requested_shards": 50,
+  "active_planned_shards": 50,
+  "empty_planned_shards": 0,
+  "total_shots": 15000,
+  "canonical_chunk_mode": true,
+  "shot_chunk": 300,
+  "n_full_chunks": 50,
+  "remainder_shots": 0,
+  "per_shard_chunks_base": 1,
+  "per_shard_chunks_extra": 0,
+  "shots_per_shard_legacy": 0
+}

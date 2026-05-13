@@ -1,0 +1,25 @@
+{
+  "phase": "mc",
+  "steps": 15,
+  "histories": 4000000,
+  "seed": 1234,
+  "unitary_matched_energy": false,
+  "p_detect": 0.43783525,
+  "p_absorb": 0.085268,
+  "p_boundary": 0.440962,
+  "p_survive": 0.03593475,
+  "se_detect": 0.00024806024664254323,
+  "se_absorb": 0.00013964004455742628,
+  "se_boundary": 0.0002482511402572,
+  "se_survive": 9.306374662353421e-05,
+  "energy_hist_detect": [
+    1.0,
+    0.0
+  ],
+  "counts": {
+    "detect": 1751341,
+    "absorb": 341072,
+    "boundary": 1763848,
+    "survive": 143739
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "phase": "test",
+  "steps": 1,
+  "shots": 15000,
+  "total_shards": 50,
+  "n_detect": 0,
+  "n_absorb": 157,
+  "n_boundary": 0,
+  "n_alive": 14843,
+  "p_detect": 0.0,
+  "p_absorb": 0.010466666666666668,
+  "p_boundary": 0.0,
+  "p_survive": 0.9895333333333334,
+  "se_detect": 0.0,
+  "se_absorb": 0.0008309478746409851,
+  "se_boundary": 0.0,
+  "se_survive": 0.0008309478746409835,
+  "x_count_total": {
+    "1": 1097,
+    "2": 13695,
+    "0": 208
+  },
+  "x_count_alive": {
+    "1": 940,
+    "2": 13695,
+    "0": 208
+  },
+  "x_count_detect": {},
+  "x_count_absorb": {
+    "1": 157
+  },
+  "x_count_boundary": {},
+  "work_nonzero_rate_total": 0.0,
+  "work_nonzero_rate_alive": 0.0,
+  "aer_shot_chunk": 300,
+  "seed_strategy": "splitmix64(root_seed, abs_shot_offset, chunk_shots)",
+  "global_shot_offset_range": {
+    "min": 0,
+    "max": 14700
+  },
+  "coin_stats": {
+    "ci1": [
+      0
+    ],
+    "ca1": [
+      0
+    ],
+    "p_ci1": [
+      0.0
+    ],
+    "p_ca1": [
+      0.0
+    ],
+    "ca1_ci0_total": 0,
+    "nonabsorb_with_ca_total": 0,
+    "absorb_without_ca_total": 157,
+    "ca1_ci0_rate": 0.0,
+    "nonabsorb_with_ca_rate": 0.0,
+    "absorb_without_ca_rate": 0.010466666666666668
+  },
+  "dir_stats": {
+    "dir_count_total": {
+      "0": 13852,
+      "1": 208,
+      "2": 222,
+      "3": 223,
+      "4": 240,
+      "5": 255
+    },
+    "invalid_dir_total": 0,
+    "invalid_dir_rate": 0.0
+  },
+  "x_prob_total": {
+    "1": 0.07313333333333333,
+    "2": 0.913,
+    "0": 0.013866666666666666
+  },
+  "x_prob_alive": {
+    "1": 0.06332951559657751,
+    "2": 0.9226571447820522,
+    "0": 0.014013339621370344
+  },
+  "x_prob_absorb": {
+    "1": 1.0
+  },
+  "diag": {
+    "unreachable_detect": false,
+    "alive_on_x_boundary": true,
+    "alive_at_x0": 208,
+    "alive_at_xmax": 0,
+    "reach_dist": 11
+  },
+  "requested_shards": 50,
+  "executed_shards": 50,
+  "empty_planned_shards": 0,
+  "canonical_chunk_mode": true,
+  "n_full_chunks": 50,
+  "remainder_shots": 0,
+  "shot_chunk_from_plan": 300
+}

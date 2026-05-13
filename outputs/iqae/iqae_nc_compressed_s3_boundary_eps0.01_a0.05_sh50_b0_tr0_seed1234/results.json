@@ -1,0 +1,57 @@
+{
+  "phase": "iqae",
+  "steps": 3,
+  "shots": 50,
+  "cfg": {
+    "nx": 16,
+    "ny": 8,
+    "nz": 8,
+    "source": {
+      "x0": 1,
+      "y0": 3,
+      "z0": 3,
+      "g0": 0,
+      "dir0": 0
+    },
+    "detector_x": 12
+  },
+  "good": "boundary",
+  "target_g": null,
+  "estimate": 0.015813276375599185,
+  "run_cfg": {
+    "seed": 1234,
+    "dir_tape": false,
+    "absorb_tape": false,
+    "term_tape": false,
+    "scatter_tape": false,
+    "full_history_mode": false,
+    "kernel_profile": "compressed",
+    "aer_safe_basis": true,
+    "aer_threads": 2,
+    "mps_max_bond": 0,
+    "mps_trunc": 0.0,
+    "iqae_shot_chunk": 50,
+    "iqae_heartbeat_sec": 300.0,
+    "iqae_eps": 0.01,
+    "iqae_alpha": 0.05
+  },
+  "meta": {
+    "good": "boundary",
+    "epsilon_target": 0.01,
+    "alpha": 0.05,
+    "target_g": null,
+    "objective_qubits": [
+      57
+    ],
+    "confidence_interval": [
+      0.015102045832459101,
+      0.016524506918739267
+    ],
+    "num_oracle_queries": 2350,
+    "timing_sec": {
+      "build_grover": 0.3981199264526367,
+      "estimate": 18859.42577815056,
+      "total": 18859.958336114883
+    }
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "phase": "test",
+  "steps": 5,
+  "shots": 15000,
+  "total_shards": 50,
+  "n_detect": 0,
+  "n_absorb": 678,
+  "n_boundary": 1547,
+  "n_alive": 12775,
+  "p_detect": 0.0,
+  "p_absorb": 0.0452,
+  "p_boundary": 0.10313333333333333,
+  "p_survive": 0.8516666666666667,
+  "se_detect": 0.0,
+  "se_absorb": 0.0016962106787385422,
+  "se_boundary": 0.0024832351061855966,
+  "se_survive": 0.0029020746091437824,
+  "x_count_total": {
+    "1": 1001,
+    "6": 9643,
+    "2": 1070,
+    "3": 875,
+    "4": 994,
+    "0": 623,
+    "5": 794
+  },
+  "x_count_alive": {
+    "6": 9643,
+    "3": 737,
+    "2": 594,
+    "1": 88,
+    "4": 872,
+    "5": 674,
+    "0": 167
+  },
+  "x_count_detect": {},
+  "x_count_absorb": {
+    "2": 131,
+    "1": 167,
+    "5": 120,
+    "3": 138,
+    "4": 122
+  },
+  "x_count_boundary": {
+    "1": 746,
+    "2": 345,
+    "0": 456
+  },
+  "work_nonzero_rate_total": 0.0,
+  "work_nonzero_rate_alive": 0.0,
+  "aer_shot_chunk": 300,
+  "seed_strategy": "splitmix64(root_seed, abs_shot_offset, chunk_shots)",
+  "global_shot_offset_range": {
+    "min": 0,
+    "max": 14700
+  },
+  "coin_stats": {
+    "ci1": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "ca1": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "p_ci1": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "p_ca1": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ca1_ci0_total": 0,
+    "nonabsorb_with_ca_total": 0,
+    "absorb_without_ca_total": 678,
+    "ca1_ci0_rate": 0.0,
+    "nonabsorb_with_ca_rate": 0.0,
+    "absorb_without_ca_rate": 0.0452
+  },
+  "dir_stats": {
+    "dir_count_total": {
+      "0": 10354,
+      "1": 950,
+      "2": 882,
+      "3": 962,
+      "4": 947,
+      "5": 905
+    },
+    "invalid_dir_total": 0,
+    "invalid_dir_rate": 0.0
+  },
+  "x_prob_total": {
+    "1": 0.06673333333333334,
+    "6": 0.6428666666666667,
+    "2": 0.07133333333333333,
+    "3": 0.058333333333333334,
+    "4": 0.06626666666666667,
+    "0": 0.04153333333333333,
+    "5": 0.05293333333333333
+  },
+  "x_prob_alive": {
+    "6": 0.7548336594911937,
+    "3": 0.057690802348336595,
+    "2": 0.04649706457925636,
+    "1": 0.006888454011741683,
+    "4": 0.06825831702544032,
+    "5": 0.05275929549902152,
+    "0": 0.013072407045009785
+  },
+  "x_prob_absorb": {
+    "2": 0.19321533923303835,
+    "1": 0.24631268436578171,
+    "5": 0.17699115044247787,
+    "3": 0.20353982300884957,
+    "4": 0.17994100294985252
+  },
+  "x_prob_boundary": {
+    "1": 0.48222365869424694,
+    "2": 0.22301228183581126,
+    "0": 0.29476405946994183
+  },
+  "diag": {
+    "unreachable_detect": false,
+    "alive_on_x_boundary": true,
+    "alive_at_x0": 167,
+    "alive_at_xmax": 0,
+    "reach_dist": 11
+  },
+  "requested_shards": 50,
+  "executed_shards": 50,
+  "empty_planned_shards": 0,
+  "canonical_chunk_mode": true,
+  "n_full_chunks": 50,
+  "remainder_shots": 0,
+  "shot_chunk_from_plan": 300
+}

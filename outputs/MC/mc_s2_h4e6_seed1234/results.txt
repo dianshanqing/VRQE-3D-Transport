@@ -1,0 +1,15 @@
+phase: mc
+steps: 2
+histories: 4000000
+seed: 1234
+unitary_matched_energy: False
+p_detect: 0.0
+p_absorb: 0.01968625
+p_boundary: 0.01499625
+p_survive: 0.9653175
+se_detect: 0.0
+se_absorb: 6.945988331572674e-05
+se_boundary: 6.076874707844794e-05
+se_survive: 9.148719062490382e-05
+energy_hist_detect: [0.0, 0.0]
+counts: {'detect': 0, 'absorb': 78745, 'boundary': 59985, 'survive': 3861270}

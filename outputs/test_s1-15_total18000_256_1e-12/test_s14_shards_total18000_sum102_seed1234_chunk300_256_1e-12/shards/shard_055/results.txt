@@ -1,0 +1,49 @@
+phase: test
+steps: 14
+shots: 300
+seed: 1234
+shard_id: 55
+num_shards: 60
+aer_shot_chunk: 300
+global_shot_offset: 16500
+seed_strategy: splitmix64(root_seed, abs_shot_offset, chunk_shots)
+dir_tape: True
+absorb_tape: True
+term_tape: True
+test_measure_coins: True
+test_measure_dir: True
+test_measure_x: True
+cfg: {'nx': 16, 'ny': 8, 'nz': 8, 'source': {'x0': 1, 'y0': 3, 'z0': 3, 'g0': 0, 'dir0': 0}, 'detector_x': 12, 'roi': {'y0': 3, 'y1': 4, 'z0': 3, 'z1': 4}}
+diag: {'reach_dist': 11, 'unreachable_detect': False, 'alive_at_x0': 0, 'alive_at_xmax': 0, 'alive_on_x_boundary': False}
+n_detect: 142
+n_absorb: 22
+n_boundary: 124
+n_survive: 12
+n_alive: 12
+counts: {'detect': 142, 'absorb': 22, 'boundary': 124, 'survive': 12}
+p_detect: 0.47333333333333333
+p_absorb: 0.07333333333333333
+p_boundary: 0.41333333333333333
+p_survive: 0.04
+se_detect: 0.028826428203351226
+se_absorb: 0.015050532167286263
+se_boundary: 0.028430552163056847
+se_survive: 0.01131370849898476
+x_count_total: {'4': 18, '2': 19, '1': 24, '7': 16, '12': 142, '0': 14, '11': 13, '6': 16, '3': 15, '5': 16, '10': 6, '8': 1}
+x_count_alive: {'11': 5, '7': 1, '5': 5, '10': 1}
+x_count_detect: {'12': 142}
+x_count_absorb: {'4': 3, '7': 4, '1': 2, '11': 1, '6': 2, '10': 1, '2': 6, '8': 1, '3': 2}
+x_count_boundary: {'2': 13, '1': 22, '0': 14, '11': 7, '6': 14, '4': 15, '3': 13, '5': 11, '10': 4, '7': 11}
+x_prob_total: {0: 0.04666666666666667, 1: 0.08, 2: 0.06333333333333334, 3: 0.05, 4: 0.06, 5: 0.05333333333333334, 6: 0.05333333333333334, 7: 0.05333333333333334, 8: 0.0033333333333333335, 10: 0.02, 11: 0.043333333333333335, 12: 0.47333333333333333}
+x_prob_alive: {5: 0.4166666666666667, 7: 0.08333333333333333, 10: 0.08333333333333333, 11: 0.4166666666666667}
+x_prob_detect: {12: 1.0}
+x_prob_absorb: {1: 0.09090909090909091, 2: 0.2727272727272727, 3: 0.09090909090909091, 4: 0.13636363636363635, 6: 0.09090909090909091, 7: 0.18181818181818182, 8: 0.045454545454545456, 10: 0.045454545454545456, 11: 0.045454545454545456}
+x_prob_boundary: {0: 0.11290322580645161, 1: 0.1774193548387097, 2: 0.10483870967741936, 3: 0.10483870967741936, 4: 0.12096774193548387, 5: 0.08870967741935484, 6: 0.11290322580645161, 7: 0.08870967741935484, 10: 0.03225806451612903, 11: 0.056451612903225805}
+work_nonzero_rate_total: None
+work_nonzero_rate_alive: None
+reg_layout: {'x': 4, 'y': 3, 'z': 3, 'g': 1, 'dir': 3, 'dirT': 42, 'cI': 14, 'cA': 14, 'tB': 14, 'tD': 14, 'tA': 14, 'status': 2, 'work': 17}
+meas_order: [('g', 1), ('status', 2), ('x', 4), ('work', 0), ('dir', 3), ('cI', 14), ('cA', 14)]
+meas_offsets: {'g': 0, 'status': 1, 'x': 3, 'work': 7, 'dir': 7, 'cI': 10, 'cA': 24}
+coin_stats: {'cibits': 14, 'cabits': 14, 'ci1': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'ca1': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4], 'p_ci1': [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], 'p_ca1': [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.013333333333333334], 'ca1_ci0_total': 4, 'nonabsorb_with_ca_total': 4, 'absorb_without_ca_total': 22, 'nonabsorb_with_ca_rate': 0.013333333333333334, 'absorb_without_ca_rate': 0.07333333333333333, 'ca1_ci0_rate': 0.013333333333333334}
+dir_stats: {'dirbits': 3, 'dir_count_total': {'0': 143, '1': 23, '2': 27, '3': 31, '4': 42, '5': 34}, 'invalid_dir_total': 0, 'invalid_dir_rate': 0.0}
+circuit_signature: {'steps': 14, 'flags': {'dir_tape': True, 'absorb_tape': True, 'term_tape': True, 'test_measure_x': True, 'test_measure_coins': True, 'test_measure_dir': True, 'aer_safe_basis': True}, 'reg_layout': {'x': 4, 'y': 3, 'z': 3, 'g': 1, 'dir': 3, 'dirT': 42, 'cI': 14, 'cA': 14, 'tB': 14, 'tD': 14, 'tA': 14, 'status': 2, 'work': 17}, 'meas_order': [('g', 1), ('status', 2), ('x', 4), ('work', 0), ('dir', 3), ('cI', 14), ('cA', 14)], 'meas_offsets': {'g': 0, 'status': 1, 'x': 3, 'work': 7, 'dir': 7, 'cI': 10, 'cA': 24}, 'sim_method': 'matrix_product_state', 'num_qubits': 145, 'compiled_depth': 63617, 'compiled_size': 117622, 'compiled_op_counts_top': {'rz': 63146, 'cx': 32247, 'sx': 15116, 'x': 7075, 'measure': 38}, 'compiled_sig': '4eb554275396b6e9e82a1ad40d26b7c9c8285690de5808543ffe55363f2c0fb2'}

@@ -1,0 +1,9 @@
+phase: iqae
+steps: 4
+shots: 50
+cfg: {'nx': 16, 'ny': 8, 'nz': 8, 'source': {'x0': 1, 'y0': 3, 'z0': 3, 'g0': 0, 'dir0': 0}, 'detector_x': 12}
+good: boundary
+target_g: None
+estimate: 0.05337753242188
+run_cfg: {'seed': 1234, 'dir_tape': False, 'absorb_tape': False, 'term_tape': False, 'scatter_tape': False, 'full_history_mode': False, 'kernel_profile': 'compressed', 'aer_safe_basis': True, 'aer_threads': 2, 'mps_max_bond': 0, 'mps_trunc': 0.0, 'iqae_shot_chunk': 50, 'iqae_heartbeat_sec': 300.0, 'iqae_eps': 0.01, 'iqae_alpha': 0.05}
+meta: {'good': 'boundary', 'epsilon_target': 0.01, 'alpha': 0.05, 'target_g': None, 'objective_qubits': [65], 'confidence_interval': [0.05031166765077434, 0.05644339719298566], 'num_oracle_queries': 1000, 'timing_sec': {'build_grover': 0.5012609958648682, 'estimate': 82280.05897092819, 'total': 82280.73403310776}}

@@ -1,0 +1,357 @@
+{
+  "phase": "test",
+  "steps": 10,
+  "shots": 300,
+  "seed": 1234,
+  "shard_id": 37,
+  "num_shards": 50,
+  "aer_shot_chunk": 300,
+  "global_shot_offset": 11100,
+  "seed_strategy": "splitmix64(root_seed, abs_shot_offset, chunk_shots)",
+  "dir_tape": true,
+  "absorb_tape": true,
+  "term_tape": true,
+  "test_measure_coins": true,
+  "test_measure_dir": true,
+  "test_measure_x": true,
+  "cfg": {
+    "nx": 16,
+    "ny": 8,
+    "nz": 8,
+    "source": {
+      "x0": 1,
+      "y0": 3,
+      "z0": 3,
+      "g0": 0,
+      "dir0": 0
+    },
+    "detector_x": 12,
+    "roi": {
+      "y0": 3,
+      "y1": 4,
+      "z0": 3,
+      "z1": 4
+    }
+  },
+  "diag": {
+    "reach_dist": 11,
+    "unreachable_detect": false,
+    "alive_at_x0": 0,
+    "alive_at_xmax": 0,
+    "alive_on_x_boundary": false
+  },
+  "n_detect": 0,
+  "n_absorb": 25,
+  "n_boundary": 102,
+  "n_survive": 173,
+  "n_alive": 173,
+  "counts": {
+    "detect": 0,
+    "absorb": 25,
+    "boundary": 102,
+    "survive": 173
+  },
+  "p_detect": 0.0,
+  "p_absorb": 0.08333333333333333,
+  "p_boundary": 0.34,
+  "p_survive": 0.5766666666666667,
+  "se_detect": 0.0,
+  "se_absorb": 0.015957118462605634,
+  "se_boundary": 0.027349588662354686,
+  "se_survive": 0.028526141357371502,
+  "x_count_total": {
+    "2": 17,
+    "11": 141,
+    "4": 13,
+    "1": 22,
+    "7": 20,
+    "9": 5,
+    "3": 24,
+    "10": 7,
+    "5": 15,
+    "8": 3,
+    "6": 16,
+    "0": 17
+  },
+  "x_count_alive": {
+    "11": 141,
+    "4": 2,
+    "7": 12,
+    "9": 5,
+    "3": 1,
+    "10": 4,
+    "8": 3,
+    "5": 3,
+    "1": 2
+  },
+  "x_count_detect": {},
+  "x_count_absorb": {
+    "2": 6,
+    "4": 3,
+    "7": 1,
+    "1": 4,
+    "6": 6,
+    "10": 3,
+    "3": 2
+  },
+  "x_count_boundary": {
+    "2": 11,
+    "1": 16,
+    "4": 8,
+    "3": 21,
+    "5": 12,
+    "7": 7,
+    "6": 10,
+    "0": 17
+  },
+  "x_prob_total": {
+    "0": 0.056666666666666664,
+    "1": 0.07333333333333333,
+    "2": 0.056666666666666664,
+    "3": 0.08,
+    "4": 0.043333333333333335,
+    "5": 0.05,
+    "6": 0.05333333333333334,
+    "7": 0.06666666666666667,
+    "8": 0.01,
+    "9": 0.016666666666666666,
+    "10": 0.023333333333333334,
+    "11": 0.47
+  },
+  "x_prob_alive": {
+    "1": 0.011560693641618497,
+    "3": 0.005780346820809248,
+    "4": 0.011560693641618497,
+    "5": 0.017341040462427744,
+    "7": 0.06936416184971098,
+    "8": 0.017341040462427744,
+    "9": 0.028901734104046242,
+    "10": 0.023121387283236993,
+    "11": 0.815028901734104
+  },
+  "x_prob_detect": {},
+  "x_prob_absorb": {
+    "1": 0.16,
+    "2": 0.24,
+    "3": 0.08,
+    "4": 0.12,
+    "6": 0.24,
+    "7": 0.04,
+    "10": 0.12
+  },
+  "x_prob_boundary": {
+    "0": 0.16666666666666666,
+    "1": 0.1568627450980392,
+    "2": 0.10784313725490197,
+    "3": 0.20588235294117646,
+    "4": 0.0784313725490196,
+    "5": 0.11764705882352941,
+    "6": 0.09803921568627451,
+    "7": 0.06862745098039216
+  },
+  "work_nonzero_rate_total": null,
+  "work_nonzero_rate_alive": null,
+  "reg_layout": {
+    "x": 4,
+    "y": 3,
+    "z": 3,
+    "g": 1,
+    "dir": 3,
+    "dirT": 30,
+    "cI": 10,
+    "cA": 10,
+    "tB": 10,
+    "tD": 10,
+    "tA": 10,
+    "status": 2,
+    "work": 17
+  },
+  "meas_order": [
+    [
+      "g",
+      1
+    ],
+    [
+      "status",
+      2
+    ],
+    [
+      "x",
+      4
+    ],
+    [
+      "work",
+      0
+    ],
+    [
+      "dir",
+      3
+    ],
+    [
+      "cI",
+      10
+    ],
+    [
+      "cA",
+      10
+    ]
+  ],
+  "meas_offsets": {
+    "g": 0,
+    "status": 1,
+    "x": 3,
+    "work": 7,
+    "dir": 7,
+    "cI": 10,
+    "cA": 20
+  },
+  "coin_stats": {
+    "cibits": 10,
+    "cabits": 10,
+    "ci1": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "ca1": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "p_ci1": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "p_ca1": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ca1_ci0_total": 0,
+    "nonabsorb_with_ca_total": 0,
+    "absorb_without_ca_total": 25,
+    "nonabsorb_with_ca_rate": 0.0,
+    "absorb_without_ca_rate": 0.08333333333333333,
+    "ca1_ci0_rate": 0.0
+  },
+  "dir_stats": {
+    "dirbits": 3,
+    "dir_count_total": {
+      "0": 169,
+      "1": 22,
+      "2": 20,
+      "3": 32,
+      "4": 30,
+      "5": 27
+    },
+    "invalid_dir_total": 0,
+    "invalid_dir_rate": 0.0
+  },
+  "circuit_signature": {
+    "steps": 10,
+    "flags": {
+      "dir_tape": true,
+      "absorb_tape": true,
+      "term_tape": true,
+      "test_measure_x": true,
+      "test_measure_coins": true,
+      "test_measure_dir": true,
+      "aer_safe_basis": true
+    },
+    "reg_layout": {
+      "x": 4,
+      "y": 3,
+      "z": 3,
+      "g": 1,
+      "dir": 3,
+      "dirT": 30,
+      "cI": 10,
+      "cA": 10,
+      "tB": 10,
+      "tD": 10,
+      "tA": 10,
+      "status": 2,
+      "work": 17
+    },
+    "meas_order": [
+      [
+        "g",
+        1
+      ],
+      [
+        "status",
+        2
+      ],
+      [
+        "x",
+        4
+      ],
+      [
+        "work",
+        0
+      ],
+      [
+        "dir",
+        3
+      ],
+      [
+        "cI",
+        10
+      ],
+      [
+        "cA",
+        10
+      ]
+    ],
+    "meas_offsets": {
+      "g": 0,
+      "status": 1,
+      "x": 3,
+      "work": 7,
+      "dir": 7,
+      "cI": 10,
+      "cA": 20
+    },
+    "sim_method": "matrix_product_state",
+    "num_qubits": 113,
+    "compiled_depth": 44590,
+    "compiled_size": 82610,
+    "compiled_op_counts_top": {
+      "rz": 44366,
+      "cx": 22555,
+      "sx": 10684,
+      "x": 4975,
+      "measure": 30
+    },
+    "compiled_sig": "5fa9e7e4f9ae61ecccf9479845508691fcbb4a523d48c947e2752cffe1ea04a8"
+  }
+}

@@ -1,0 +1,49 @@
+phase: test
+steps: 15
+shots: 300
+seed: 1234
+shard_id: 10
+num_shards: 50
+aer_shot_chunk: 300
+global_shot_offset: 3000
+seed_strategy: splitmix64(root_seed, abs_shot_offset, chunk_shots)
+dir_tape: True
+absorb_tape: True
+term_tape: True
+test_measure_coins: True
+test_measure_dir: True
+test_measure_x: True
+cfg: {'nx': 16, 'ny': 8, 'nz': 8, 'source': {'x0': 1, 'y0': 3, 'z0': 3, 'g0': 0, 'dir0': 0}, 'detector_x': 12, 'roi': {'y0': 3, 'y1': 4, 'z0': 3, 'z1': 4}}
+diag: {'reach_dist': 11, 'unreachable_detect': False, 'alive_at_x0': 1, 'alive_at_xmax': 0, 'alive_on_x_boundary': True}
+n_detect: 133
+n_absorb: 27
+n_boundary: 133
+n_survive: 7
+n_alive: 7
+counts: {'detect': 133, 'absorb': 27, 'boundary': 133, 'survive': 7}
+p_detect: 0.44333333333333336
+p_absorb: 0.09
+p_boundary: 0.44333333333333336
+p_survive: 0.023333333333333334
+se_detect: 0.028681520699391616
+se_absorb: 0.016522711641858305
+se_boundary: 0.028681520699391616
+se_survive: 0.008715673408461504
+x_count_total: {'0': 27, '12': 133, '2': 21, '1': 24, '3': 19, '6': 16, '8': 3, '5': 14, '7': 7, '9': 4, '11': 12, '10': 9, '4': 10, '14': 1}
+x_count_alive: {'2': 1, '7': 2, '1': 1, '0': 1, '4': 1, '14': 1}
+x_count_detect: {'12': 133}
+x_count_absorb: {'2': 4, '1': 7, '8': 2, '7': 1, '9': 2, '6': 4, '4': 1, '5': 3, '3': 2, '11': 1}
+x_count_boundary: {'0': 26, '2': 16, '1': 16, '3': 17, '6': 12, '5': 11, '7': 4, '11': 11, '10': 9, '4': 8, '9': 2, '8': 1}
+x_prob_total: {0: 0.09, 1: 0.08, 2: 0.07, 3: 0.06333333333333334, 4: 0.03333333333333333, 5: 0.04666666666666667, 6: 0.05333333333333334, 7: 0.023333333333333334, 8: 0.01, 9: 0.013333333333333334, 10: 0.03, 11: 0.04, 12: 0.44333333333333336, 14: 0.0033333333333333335}
+x_prob_alive: {0: 0.14285714285714285, 1: 0.14285714285714285, 2: 0.14285714285714285, 4: 0.14285714285714285, 7: 0.2857142857142857, 14: 0.14285714285714285}
+x_prob_detect: {12: 1.0}
+x_prob_absorb: {1: 0.25925925925925924, 2: 0.14814814814814814, 3: 0.07407407407407407, 4: 0.037037037037037035, 5: 0.1111111111111111, 6: 0.14814814814814814, 7: 0.037037037037037035, 8: 0.07407407407407407, 9: 0.07407407407407407, 11: 0.037037037037037035}
+x_prob_boundary: {0: 0.19548872180451127, 1: 0.12030075187969924, 2: 0.12030075187969924, 3: 0.12781954887218044, 4: 0.06015037593984962, 5: 0.08270676691729323, 6: 0.09022556390977443, 7: 0.03007518796992481, 8: 0.007518796992481203, 9: 0.015037593984962405, 10: 0.06766917293233082, 11: 0.08270676691729323}
+work_nonzero_rate_total: None
+work_nonzero_rate_alive: None
+reg_layout: {'x': 4, 'y': 3, 'z': 3, 'g': 1, 'dir': 3, 'dirT': 45, 'cI': 15, 'cA': 15, 'tB': 15, 'tD': 15, 'tA': 15, 'tS': 15, 'status': 2, 'work': 17}
+meas_order: [('g', 1), ('status', 2), ('x', 4), ('work', 0), ('dir', 3), ('cI', 15), ('cA', 15)]
+meas_offsets: {'g': 0, 'status': 1, 'x': 3, 'work': 7, 'dir': 7, 'cI': 10, 'cA': 25}
+coin_stats: {'cibits': 15, 'cabits': 15, 'ci1': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'ca1': [5, 5, 2, 2, 2, 5, 1, 0, 1, 2, 2, 0, 3, 0, 3], 'p_ci1': [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], 'p_ca1': [0.016666666666666666, 0.016666666666666666, 0.006666666666666667, 0.006666666666666667, 0.006666666666666667, 0.016666666666666666, 0.0033333333333333335, 0.0, 0.0033333333333333335, 0.006666666666666667, 0.006666666666666667, 0.0, 0.01, 0.0, 0.01], 'ca1_ci0_total': 33, 'nonabsorb_with_ca_total': 6, 'absorb_without_ca_total': 0, 'nonabsorb_with_ca_rate': 0.02, 'absorb_without_ca_rate': 0.0, 'ca1_ci0_rate': 0.11}
+dir_stats: {'dirbits': 3, 'dir_count_total': {'0': 137, '1': 35, '2': 19, '3': 46, '4': 22, '5': 41}, 'invalid_dir_total': 0, 'invalid_dir_rate': 0.0}
+circuit_signature: {'steps': 15, 'flags': {'dir_tape': True, 'absorb_tape': True, 'term_tape': True, 'test_measure_x': True, 'test_measure_coins': True, 'test_measure_dir': True, 'aer_safe_basis': True}, 'reg_layout': {'x': 4, 'y': 3, 'z': 3, 'g': 1, 'dir': 3, 'dirT': 45, 'cI': 15, 'cA': 15, 'tB': 15, 'tD': 15, 'tA': 15, 'tS': 15, 'status': 2, 'work': 17}, 'meas_order': [('g', 1), ('status', 2), ('x', 4), ('work', 0), ('dir', 3), ('cI', 15), ('cA', 15)], 'meas_offsets': {'g': 0, 'status': 1, 'x': 3, 'work': 7, 'dir': 7, 'cI': 10, 'cA': 25}, 'sim_method': 'matrix_product_state', 'num_qubits': 168, 'compiled_depth': 67812, 'compiled_size': 115097, 'compiled_op_counts_top': {'rz': 62456, 'cx': 31230, 'sx': 15508, 'x': 5863, 'measure': 40}, 'compiled_sig': '45f98159813456e299410577798084d8fbe02593640b72dd323fc2e70339ddda'}

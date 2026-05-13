@@ -1,0 +1,49 @@
+phase: test
+steps: 13
+shots: 300
+seed: 1234
+shard_id: 40
+num_shards: 60
+aer_shot_chunk: 300
+global_shot_offset: 12000
+seed_strategy: splitmix64(root_seed, abs_shot_offset, chunk_shots)
+dir_tape: True
+absorb_tape: True
+term_tape: True
+test_measure_coins: True
+test_measure_dir: True
+test_measure_x: True
+cfg: {'nx': 16, 'ny': 8, 'nz': 8, 'source': {'x0': 1, 'y0': 3, 'z0': 3, 'g0': 0, 'dir0': 0}, 'detector_x': 12, 'roi': {'y0': 3, 'y1': 4, 'z0': 3, 'z1': 4}}
+diag: {'reach_dist': 11, 'unreachable_detect': False, 'alive_at_x0': 4, 'alive_at_xmax': 0, 'alive_on_x_boundary': True}
+n_detect: 136
+n_absorb: 23
+n_boundary: 116
+n_survive: 25
+n_alive: 25
+counts: {'detect': 136, 'absorb': 23, 'boundary': 116, 'survive': 25}
+p_detect: 0.4533333333333333
+p_absorb: 0.07666666666666666
+p_boundary: 0.38666666666666666
+p_survive: 0.08333333333333333
+se_detect: 0.028741504380843986
+se_absorb: 0.015361085995559135
+se_boundary: 0.028116161162550595
+se_survive: 0.015957118462605634
+x_count_total: {'10': 9, '12': 136, '11': 11, '7': 12, '2': 15, '1': 24, '3': 23, '5': 11, '4': 14, '6': 14, '0': 25, '8': 6}
+x_count_alive: {'10': 5, '11': 6, '7': 2, '8': 5, '3': 1, '0': 4, '6': 2}
+x_count_detect: {'12': 136}
+x_count_absorb: {'7': 1, '4': 3, '6': 1, '5': 2, '1': 4, '10': 2, '2': 3, '3': 2, '11': 5}
+x_count_boundary: {'7': 9, '2': 12, '1': 20, '3': 20, '5': 9, '0': 21, '4': 11, '6': 11, '8': 1, '10': 2}
+x_prob_total: {0: 0.08333333333333333, 1: 0.08, 2: 0.05, 3: 0.07666666666666666, 4: 0.04666666666666667, 5: 0.03666666666666667, 6: 0.04666666666666667, 7: 0.04, 8: 0.02, 10: 0.03, 11: 0.03666666666666667, 12: 0.4533333333333333}
+x_prob_alive: {0: 0.16, 3: 0.04, 6: 0.08, 7: 0.08, 8: 0.2, 10: 0.2, 11: 0.24}
+x_prob_detect: {12: 1.0}
+x_prob_absorb: {1: 0.17391304347826086, 2: 0.13043478260869565, 3: 0.08695652173913043, 4: 0.13043478260869565, 5: 0.08695652173913043, 6: 0.043478260869565216, 7: 0.043478260869565216, 10: 0.08695652173913043, 11: 0.21739130434782608}
+x_prob_boundary: {0: 0.1810344827586207, 1: 0.1724137931034483, 2: 0.10344827586206896, 3: 0.1724137931034483, 4: 0.09482758620689655, 5: 0.07758620689655173, 6: 0.09482758620689655, 7: 0.07758620689655173, 8: 0.008620689655172414, 10: 0.017241379310344827}
+work_nonzero_rate_total: None
+work_nonzero_rate_alive: None
+reg_layout: {'x': 4, 'y': 3, 'z': 3, 'g': 1, 'dir': 3, 'dirT': 39, 'cI': 13, 'cA': 13, 'tB': 13, 'tD': 13, 'tA': 13, 'status': 2, 'work': 17}
+meas_order: [('g', 1), ('status', 2), ('x', 4), ('work', 0), ('dir', 3), ('cI', 13), ('cA', 13)]
+meas_offsets: {'g': 0, 'status': 1, 'x': 3, 'work': 7, 'dir': 7, 'cI': 10, 'cA': 23}
+coin_stats: {'cibits': 13, 'cabits': 13, 'ci1': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'ca1': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'p_ci1': [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], 'p_ca1': [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], 'ca1_ci0_total': 0, 'nonabsorb_with_ca_total': 0, 'absorb_without_ca_total': 23, 'nonabsorb_with_ca_rate': 0.0, 'absorb_without_ca_rate': 0.07666666666666666, 'ca1_ci0_rate': 0.0}
+dir_stats: {'dirbits': 3, 'dir_count_total': {'0': 152, '1': 34, '2': 33, '3': 26, '4': 29, '5': 26}, 'invalid_dir_total': 0, 'invalid_dir_rate': 0.0}
+circuit_signature: {'steps': 13, 'flags': {'dir_tape': True, 'absorb_tape': True, 'term_tape': True, 'test_measure_x': True, 'test_measure_coins': True, 'test_measure_dir': True, 'aer_safe_basis': True}, 'reg_layout': {'x': 4, 'y': 3, 'z': 3, 'g': 1, 'dir': 3, 'dirT': 39, 'cI': 13, 'cA': 13, 'tB': 13, 'tD': 13, 'tA': 13, 'status': 2, 'work': 17}, 'meas_order': [('g', 1), ('status', 2), ('x', 4), ('work', 0), ('dir', 3), ('cI', 13), ('cA', 13)], 'meas_offsets': {'g': 0, 'status': 1, 'x': 3, 'work': 7, 'dir': 7, 'cI': 10, 'cA': 23}, 'sim_method': 'matrix_product_state', 'num_qubits': 137, 'compiled_depth': 58792, 'compiled_size': 108648, 'compiled_op_counts_top': {'rz': 58329, 'cx': 29756, 'sx': 13982, 'x': 6545, 'measure': 36}, 'compiled_sig': '63b09066718c88f256ff6995fc832cf5e83c985bc4abc87b169fe02ac26b673c'}

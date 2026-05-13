@@ -1,0 +1,331 @@
+{
+  "phase": "test",
+  "steps": 7,
+  "shots": 300,
+  "seed": 1234,
+  "shard_id": 27,
+  "num_shards": 50,
+  "aer_shot_chunk": 300,
+  "global_shot_offset": 8100,
+  "seed_strategy": "splitmix64(root_seed, abs_shot_offset, chunk_shots)",
+  "dir_tape": true,
+  "absorb_tape": true,
+  "term_tape": true,
+  "test_measure_coins": true,
+  "test_measure_dir": true,
+  "test_measure_x": true,
+  "cfg": {
+    "nx": 16,
+    "ny": 8,
+    "nz": 8,
+    "source": {
+      "x0": 1,
+      "y0": 3,
+      "z0": 3,
+      "g0": 0,
+      "dir0": 0
+    },
+    "detector_x": 12,
+    "roi": {
+      "y0": 3,
+      "y1": 4,
+      "z0": 3,
+      "z1": 4
+    }
+  },
+  "diag": {
+    "reach_dist": 11,
+    "unreachable_detect": false,
+    "alive_at_x0": 1,
+    "alive_at_xmax": 0,
+    "alive_on_x_boundary": true
+  },
+  "n_detect": 0,
+  "n_absorb": 20,
+  "n_boundary": 46,
+  "n_survive": 234,
+  "n_alive": 234,
+  "counts": {
+    "detect": 0,
+    "absorb": 20,
+    "boundary": 46,
+    "survive": 234
+  },
+  "p_detect": 0.0,
+  "p_absorb": 0.06666666666666667,
+  "p_boundary": 0.15333333333333332,
+  "p_survive": 0.78,
+  "se_detect": 0.0,
+  "se_absorb": 0.01440164599646191,
+  "se_boundary": 0.020802421511466898,
+  "se_survive": 0.023916521486202793,
+  "x_count_total": {
+    "7": 12,
+    "2": 11,
+    "1": 17,
+    "6": 21,
+    "3": 18,
+    "5": 21,
+    "8": 175,
+    "4": 12,
+    "0": 13
+  },
+  "x_count_alive": {
+    "7": 12,
+    "6": 18,
+    "5": 15,
+    "8": 175,
+    "1": 1,
+    "2": 3,
+    "4": 5,
+    "3": 4,
+    "0": 1
+  },
+  "x_count_detect": {},
+  "x_count_absorb": {
+    "4": 2,
+    "1": 4,
+    "2": 3,
+    "3": 2,
+    "5": 6,
+    "6": 3
+  },
+  "x_count_boundary": {
+    "2": 5,
+    "1": 12,
+    "3": 12,
+    "0": 12,
+    "4": 5
+  },
+  "x_prob_total": {
+    "0": 0.043333333333333335,
+    "1": 0.056666666666666664,
+    "2": 0.03666666666666667,
+    "3": 0.06,
+    "4": 0.04,
+    "5": 0.07,
+    "6": 0.07,
+    "7": 0.04,
+    "8": 0.5833333333333334
+  },
+  "x_prob_alive": {
+    "0": 0.004273504273504274,
+    "1": 0.004273504273504274,
+    "2": 0.01282051282051282,
+    "3": 0.017094017094017096,
+    "4": 0.021367521367521368,
+    "5": 0.0641025641025641,
+    "6": 0.07692307692307693,
+    "7": 0.05128205128205128,
+    "8": 0.7478632478632479
+  },
+  "x_prob_detect": {},
+  "x_prob_absorb": {
+    "1": 0.2,
+    "2": 0.15,
+    "3": 0.1,
+    "4": 0.1,
+    "5": 0.3,
+    "6": 0.15
+  },
+  "x_prob_boundary": {
+    "0": 0.2608695652173913,
+    "1": 0.2608695652173913,
+    "2": 0.10869565217391304,
+    "3": 0.2608695652173913,
+    "4": 0.10869565217391304
+  },
+  "work_nonzero_rate_total": null,
+  "work_nonzero_rate_alive": null,
+  "reg_layout": {
+    "x": 4,
+    "y": 3,
+    "z": 3,
+    "g": 1,
+    "dir": 3,
+    "dirT": 21,
+    "cI": 7,
+    "cA": 7,
+    "tB": 7,
+    "tD": 7,
+    "tA": 7,
+    "status": 2,
+    "work": 17
+  },
+  "meas_order": [
+    [
+      "g",
+      1
+    ],
+    [
+      "status",
+      2
+    ],
+    [
+      "x",
+      4
+    ],
+    [
+      "work",
+      0
+    ],
+    [
+      "dir",
+      3
+    ],
+    [
+      "cI",
+      7
+    ],
+    [
+      "cA",
+      7
+    ]
+  ],
+  "meas_offsets": {
+    "g": 0,
+    "status": 1,
+    "x": 3,
+    "work": 7,
+    "dir": 7,
+    "cI": 10,
+    "cA": 17
+  },
+  "coin_stats": {
+    "cibits": 7,
+    "cabits": 7,
+    "ci1": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "ca1": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "p_ci1": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "p_ca1": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ca1_ci0_total": 0,
+    "nonabsorb_with_ca_total": 0,
+    "absorb_without_ca_total": 20,
+    "nonabsorb_with_ca_rate": 0.0,
+    "absorb_without_ca_rate": 0.06666666666666667,
+    "ca1_ci0_rate": 0.0
+  },
+  "dir_stats": {
+    "dirbits": 3,
+    "dir_count_total": {
+      "0": 200,
+      "1": 21,
+      "2": 11,
+      "3": 21,
+      "4": 25,
+      "5": 22
+    },
+    "invalid_dir_total": 0,
+    "invalid_dir_rate": 0.0
+  },
+  "circuit_signature": {
+    "steps": 7,
+    "flags": {
+      "dir_tape": true,
+      "absorb_tape": true,
+      "term_tape": true,
+      "test_measure_x": true,
+      "test_measure_coins": true,
+      "test_measure_dir": true,
+      "aer_safe_basis": true
+    },
+    "reg_layout": {
+      "x": 4,
+      "y": 3,
+      "z": 3,
+      "g": 1,
+      "dir": 3,
+      "dirT": 21,
+      "cI": 7,
+      "cA": 7,
+      "tB": 7,
+      "tD": 7,
+      "tA": 7,
+      "status": 2,
+      "work": 17
+    },
+    "meas_order": [
+      [
+        "g",
+        1
+      ],
+      [
+        "status",
+        2
+      ],
+      [
+        "x",
+        4
+      ],
+      [
+        "work",
+        0
+      ],
+      [
+        "dir",
+        3
+      ],
+      [
+        "cI",
+        7
+      ],
+      [
+        "cA",
+        7
+      ]
+    ],
+    "meas_offsets": {
+      "g": 0,
+      "status": 1,
+      "x": 3,
+      "work": 7,
+      "dir": 7,
+      "cI": 10,
+      "cA": 17
+    },
+    "sim_method": "matrix_product_state",
+    "num_qubits": 89,
+    "compiled_depth": 31315,
+    "compiled_size": 57954,
+    "compiled_op_counts_top": {
+      "rz": 31138,
+      "cx": 15807,
+      "sx": 7512,
+      "x": 3473,
+      "measure": 24
+    },
+    "compiled_sig": "bf9ddcb97479e632d23225466171197741346bb948286d4aa80a01b3ee69ebe6"
+  }
+}

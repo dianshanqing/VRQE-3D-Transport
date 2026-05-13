@@ -1,0 +1,49 @@
+phase: test
+steps: 12
+shots: 300
+seed: 1234
+shard_id: 47
+num_shards: 50
+aer_shot_chunk: 300
+global_shot_offset: 14100
+seed_strategy: splitmix64(root_seed, abs_shot_offset, chunk_shots)
+dir_tape: True
+absorb_tape: True
+term_tape: True
+test_measure_coins: True
+test_measure_dir: True
+test_measure_x: True
+cfg: {'nx': 16, 'ny': 8, 'nz': 8, 'source': {'x0': 1, 'y0': 3, 'z0': 3, 'g0': 0, 'dir0': 0}, 'detector_x': 12, 'roi': {'y0': 3, 'y1': 4, 'z0': 3, 'z1': 4}}
+diag: {'reach_dist': 11, 'unreachable_detect': False, 'alive_at_x0': 0, 'alive_at_xmax': 0, 'alive_on_x_boundary': False}
+n_detect: 141
+n_absorb: 22
+n_boundary: 117
+n_survive: 20
+n_alive: 20
+counts: {'detect': 141, 'absorb': 22, 'boundary': 117, 'survive': 20}
+p_detect: 0.47
+p_absorb: 0.07333333333333333
+p_boundary: 0.39
+p_survive: 0.06666666666666667
+se_detect: 0.02881550508551487
+se_absorb: 0.015050532167286263
+se_boundary: 0.028160255680657446
+se_survive: 0.01440164599646191
+x_count_total: {'2': 22, '1': 16, '4': 10, '7': 10, '3': 21, '6': 12, '10': 8, '8': 4, '12': 143, '5': 17, '0': 27, '11': 6, '9': 4}
+x_count_alive: {'10': 5, '11': 6, '1': 2, '12': 2, '7': 3, '3': 1, '9': 1}
+x_count_detect: {'12': 141}
+x_count_absorb: {'4': 1, '7': 2, '2': 4, '10': 3, '3': 4, '6': 2, '5': 3, '1': 1, '8': 1, '9': 1}
+x_count_boundary: {'2': 18, '1': 13, '3': 16, '6': 10, '8': 3, '5': 14, '7': 5, '0': 27, '4': 9, '9': 2}
+x_prob_total: {0: 0.09, 1: 0.05333333333333334, 2: 0.07333333333333333, 3: 0.07, 4: 0.03333333333333333, 5: 0.056666666666666664, 6: 0.04, 7: 0.03333333333333333, 8: 0.013333333333333334, 9: 0.013333333333333334, 10: 0.02666666666666667, 11: 0.02, 12: 0.4766666666666667}
+x_prob_alive: {1: 0.1, 3: 0.05, 7: 0.15, 9: 0.05, 10: 0.25, 11: 0.3, 12: 0.1}
+x_prob_detect: {12: 1.0}
+x_prob_absorb: {1: 0.045454545454545456, 2: 0.18181818181818182, 3: 0.18181818181818182, 4: 0.045454545454545456, 5: 0.13636363636363635, 6: 0.09090909090909091, 7: 0.09090909090909091, 8: 0.045454545454545456, 9: 0.045454545454545456, 10: 0.13636363636363635}
+x_prob_boundary: {0: 0.23076923076923078, 1: 0.1111111111111111, 2: 0.15384615384615385, 3: 0.13675213675213677, 4: 0.07692307692307693, 5: 0.11965811965811966, 6: 0.08547008547008547, 7: 0.042735042735042736, 8: 0.02564102564102564, 9: 0.017094017094017096}
+work_nonzero_rate_total: None
+work_nonzero_rate_alive: None
+reg_layout: {'x': 4, 'y': 3, 'z': 3, 'g': 1, 'dir': 3, 'dirT': 36, 'cI': 12, 'cA': 12, 'tB': 12, 'tD': 12, 'tA': 12, 'status': 2, 'work': 17}
+meas_order: [('g', 1), ('status', 2), ('x', 4), ('work', 0), ('dir', 3), ('cI', 12), ('cA', 12)]
+meas_offsets: {'g': 0, 'status': 1, 'x': 3, 'work': 7, 'dir': 7, 'cI': 10, 'cA': 22}
+coin_stats: {'cibits': 12, 'cabits': 12, 'ci1': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'ca1': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'p_ci1': [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], 'p_ca1': [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], 'ca1_ci0_total': 0, 'nonabsorb_with_ca_total': 0, 'absorb_without_ca_total': 22, 'nonabsorb_with_ca_rate': 0.0, 'absorb_without_ca_rate': 0.07333333333333333, 'ca1_ci0_rate': 0.0}
+dir_stats: {'dirbits': 3, 'dir_count_total': {'0': 163, '1': 29, '2': 23, '3': 29, '4': 25, '5': 31}, 'invalid_dir_total': 0, 'invalid_dir_rate': 0.0}
+circuit_signature: {'steps': 12, 'flags': {'dir_tape': True, 'absorb_tape': True, 'term_tape': True, 'test_measure_x': True, 'test_measure_coins': True, 'test_measure_dir': True, 'aer_safe_basis': True}, 'reg_layout': {'x': 4, 'y': 3, 'z': 3, 'g': 1, 'dir': 3, 'dirT': 36, 'cI': 12, 'cA': 12, 'tB': 12, 'tD': 12, 'tA': 12, 'status': 2, 'work': 17}, 'meas_order': [('g', 1), ('status', 2), ('x', 4), ('work', 0), ('dir', 3), ('cI', 12), ('cA', 12)], 'meas_offsets': {'g': 0, 'status': 1, 'x': 3, 'work': 7, 'dir': 7, 'cI': 10, 'cA': 22}, 'sim_method': 'matrix_product_state', 'num_qubits': 129, 'compiled_depth': 53932, 'compiled_size': 99732, 'compiled_op_counts_top': {'rz': 53550, 'cx': 27277, 'sx': 12860, 'x': 6011, 'measure': 34}, 'compiled_sig': 'e5ad278631e3de6066d13e1caa36cddd29f353fd8ea0781f64e61d42a75d2a09'}
